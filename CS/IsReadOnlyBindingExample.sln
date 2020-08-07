@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsReadOnlyBindingExample", "IsReadOnlyBindingExample.csproj", "{9DBE8A74-ADA7-4C7C-80C2-E3F1B4A91ACE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DBE8A74-ADA7-4C7C-80C2-E3F1B4A91ACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DBE8A74-ADA7-4C7C-80C2-E3F1B4A91ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DBE8A74-ADA7-4C7C-80C2-E3F1B4A91ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DBE8A74-ADA7-4C7C-80C2-E3F1B4A91ACE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E7070E9-0929-436B-B3AA-301ED75925B5}
+	EndGlobalSection
+EndGlobal
