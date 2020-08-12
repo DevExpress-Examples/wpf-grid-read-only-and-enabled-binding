@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Windows.Data;
@@ -30,20 +30,6 @@ namespace IsReadOnlyBindingExample {
             if(rowData.Level == 0)
                 return TaskImages[0];
             return TaskImages[1];
-        }
-    }
-
-
-    public class IsParentRowConverter : IValueConverter {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
-            var row = value as EmployeeTask;
-            if(row != null && row.IsRoot())
-                return true;
-            return false;
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) {
-            throw new NotImplementedException();
         }
     }
 }
