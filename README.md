@@ -1,4 +1,4 @@
-# ReadOnly and Enabled State Binding
+# Read-Only and Enabled State Binding
 
 The example uses **BaseColumn.IsEnabledBinding** property to disable the **StartDate** and **Due Date** cells if the **Progress** value equals **100%**:
 
