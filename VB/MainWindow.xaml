@@ -26,7 +26,7 @@
                         <dxe:ComboBoxEditSettings ItemsSource="{Binding Path=EmployeeNames, Source={StaticResource employeeTasks}}" AutoComplete="True"/>
                     </dxg:TreeListColumn.EditSettings>
                 </dxg:TreeListColumn>
-                <dxg:TreeListColumn FieldName="Status" Header="Progress" FixedWidth="True" Width="100" IsReadOnlyBinding="{Binding HasSubtasks}">
+                <dxg:TreeListColumn FieldName="Status" Header="Progress" FixedWidth="True" Width="100" IsReadOnlyBinding="{Binding IsRoot}">
                     <dxg:TreeListColumn.CellDisplayTemplate>
                         <DataTemplate>
                             <dxe:ProgressBarEdit Name="PART_Editor" ContentDisplayMode="Value" IsPercent="True" DisplayFormatString="p0"/>
