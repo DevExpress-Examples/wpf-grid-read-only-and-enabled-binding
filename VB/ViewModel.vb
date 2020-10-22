@@ -48,7 +48,7 @@ Namespace IsReadOnlyBindingExample
 				End If
 				editableDataSource_Conflict = New ObservableCollection(Of EmployeeTask)(GetEmployeeTasks().Take(28))
 				For Each item As EmployeeTask In editableDataSource_Conflict
-					If Not item.IsRoot Then
+					If Not item.HasSubtasks Then
 						AddHandler item.PropertyChanged, AddressOf Item_PropertyChanged
 					End If
 				Next item
@@ -66,7 +66,7 @@ Namespace IsReadOnlyBindingExample
 		Private Shared Sub UpdateParentStatus()
 			Dim d As New Dictionary(Of Integer, List(Of Integer))()
 			For Each item As EmployeeTask In EditableDataSource
-				If Not item.IsRoot Then
+				If Not item.HasSubtasks Then
 					If d.ContainsKey(item.ParentID) Then
 						d(item.ParentID).Add(item.Status)
 					Else
@@ -130,7 +130,7 @@ Namespace IsReadOnlyBindingExample
 			End Set
 		End Property
 
-		Public ReadOnly Property IsRoot() As Boolean
+		Public ReadOnly Property HasSubtasks() As Boolean
 			Get
 				Return ParentID = 0
 			End Get
