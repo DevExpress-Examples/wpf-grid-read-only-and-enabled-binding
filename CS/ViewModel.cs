@@ -41,7 +41,7 @@ namespace IsReadOnlyBindingExample {
                     return editableDataSource;
                 editableDataSource = new ObservableCollection<EmployeeTask>(GetEmployeeTasks().Take(28));
                 foreach(var item in editableDataSource) {
-                    if(!item.IsRoot)
+                    if(!item.HasSubtasks)
                         item.PropertyChanged += Item_PropertyChanged;
                 }
                 UpdateParentStatus();
@@ -58,7 +58,7 @@ namespace IsReadOnlyBindingExample {
         static void UpdateParentStatus() {
             Dictionary<int, List<int>> d = new Dictionary<int, List<int>>();
             foreach(var item in EditableDataSource) {
-                if(!item.IsRoot)
+                if(!item.HasSubtasks)
                     if(d.ContainsKey(item.ParentID))
                         d[item.ParentID].Add(item.Status);
                     else
@@ -97,7 +97,7 @@ namespace IsReadOnlyBindingExample {
         int _status;
         public int Status { get { return _status; } set { _status = value; OnPropertyChanged(); OnPropertyChanged("IsCompleted"); } }
 
-        public bool IsRoot { get { return ParentID == 0; } }
+        public bool HasSubtasks { get { return ParentID == 0; } }
 
         public event PropertyChangedEventHandler PropertyChanged;
         void OnPropertyChanged([CallerMemberName] string propertyName = "") {
