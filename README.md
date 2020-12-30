@@ -10,5 +10,5 @@ The example uses [BaseColumn.IsEnabledBinding](https://docs.devexpress.com/WPF/D
 
 ---
 
-## NOTE:
+## TIP
 In versions prior to **v20.2**, please use solutions from this example: [How to disable rows in GridControl based on their values](https://github.com/DevExpress-Examples/how-to-disable-rows-in-gridcontrol-based-on-their-values-e3594).
