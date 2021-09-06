@@ -1,8 +1,9 @@
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "IsReadOnlyBindingExample", "IsReadOnlyBindingExample.vbproj", "{9DBE8A74-ADA7-4C7C-80C2-E3F1B4A91ACE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsReadOnlyBindingExample", "IsReadOnlyBindingExample.Net5.csproj", "{9DBE8A74-ADA7-4C7C-80C2-E3F1B4A91ACE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
